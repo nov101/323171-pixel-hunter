@@ -12,9 +12,7 @@ export default function templateIntro() {
 
   const asteriskButton = node.querySelector(`.intro__asterisk`);
 
-  asteriskButton.addEventListener(`click`, () => {
-    setActiveScreen(templateGreeting());
-  });
+  asteriskButton.addEventListener('click', () => setActiveScreen(templateGreeting()));
 
   return node;
 }

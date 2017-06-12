@@ -58,8 +58,10 @@ export default function templateGame2() {
     setActiveScreen(templateGame1());
   });
 
+  const el = form.querySelector(`[name="question1"]:checked`);
+
   form.addEventListener(`change`, () => {
-    if (form.querySelector(`[name="question1"]:checked`)) {
+    if (el) {
       setActiveScreen(templateGame3());
     }
   });

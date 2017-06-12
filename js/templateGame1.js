@@ -64,14 +64,15 @@ export default function templateGame1() {
 
   const form = node.querySelector(`.game__content`);
   const backButton = node.querySelector(`.header__back`);
+  const el1 = form.querySelector(`[name="question1"]:checked`);
+  const el2 = form.querySelector(`[name="question2"]:checked`);
 
   backButton.addEventListener(`click`, () => {
     setActiveScreen(templateRules());
   });
 
   form.addEventListener(`change`, () => {
-    if (form.querySelector(`[name="question1"]:checked`) &&
-        form.querySelector(`[name="question2"]:checked`)) {
+    if (el1 && el2) {
       setActiveScreen(templateGame2());
     }
   });
