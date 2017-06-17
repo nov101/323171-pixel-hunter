@@ -56,11 +56,11 @@ export default function templateGame3() {
     setActiveScreen(templateGame2());
   });
 
-  gameOptions.forEach((item)=> {
-    item.addEventListener(`click`, () => {
+  for (let i = 0; i < gameOptions.length; i++) {
+    gameOptions[i].addEventListener(`click`, () => {
       setActiveScreen(templateStats());
     });
-  })
+  }
 
   return node;
 }
