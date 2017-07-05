@@ -8,22 +8,22 @@ export const levels = Object.freeze({
   '1': {
     question: `Угадайте для каждого изображения фото или рисунок?`,
     answers: [
-      {url:`https://k42.kn3.net/CF42609C8.jpg`, right: true, type: `1`},
-      {url:`http://i.imgur.com/1KegWPz.jpg`,right: false, type: `1`}
+      `https://k42.kn3.net/CF42609C8.jpg`,
+      `http://i.imgur.com/1KegWPz.jpg`
     ]
   },
   '2': {
     question: `Угадай, фото или рисунок?`,
     answers: [
-      {url:`https://k32.kn3.net/5C7060EC5.jpg`,right: false, type: `2`}
+      `https://k32.kn3.net/5C7060EC5.jpg`
     ]
   },
   '3': {
     question: `Найдите рисунок среди изображений`,
     answers: [
-      {url:`http://i.imgur.com/DKR1HtB.jpg`, right: false, type: `3`},
-      {url:`http://i.imgur.com/1KegWPz.jpg`, right: false, type: `3`},
-      {url:`https://i.imgur.com/DiHM5Zb.jpg`, right: false, type: `3`}
+      `http://i.imgur.com/DKR1HtB.jpg`,
+      `http://i.imgur.com/1KegWPz.jpg`,
+      `https://i.imgur.com/DiHM5Zb.jpg`
     ]
   }
 });

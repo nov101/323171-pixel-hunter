@@ -47,9 +47,11 @@ export default function templateGame2() {
   const backButton = node.querySelector(`.header__back`);
   const images = node.querySelectorAll(`.game__option > img`);
 
-  for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener(`load`, (event) =>{
-      calculateAspectRatioFit(images[i]);
+
+
+  for (let i of images) {
+    i.addEventListener(`load`, (event) =>{
+      calculateAspectRatioFit(i);
     });
   }
 

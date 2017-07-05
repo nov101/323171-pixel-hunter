@@ -39,9 +39,10 @@ export default function templateGame3() {
   const backButton = node.querySelector(`.header__back`);
   const images = node.querySelectorAll(`.game__option > img`);
 
-  for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener(`load`, (event) =>{
-      calculateAspectRatioFit(images[i]);
+
+  for (let i of images) {
+    i.addEventListener(`load`, (event) =>{
+      calculateAspectRatioFit(i);
     });
   }
 
@@ -49,8 +50,10 @@ export default function templateGame3() {
     setActiveScreen(game2());
   });
 
-  for (let i = 0; i < gameOptions.length; i++) {
-    gameOptions[i].addEventListener(`click`, () => {
+
+
+  for (let i of gameOptions) {
+    i.addEventListener(`click`, () => {
       setActiveScreen(stats());
     });
   }

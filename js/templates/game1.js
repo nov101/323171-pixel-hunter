@@ -57,7 +57,7 @@ export default function game1() {
   //   });
   // }
 
-  for (let i in images) {
+  for (let i of images) {
     i.addEventListener(`load`, (event) =>{
       calculateAspectRatioFit(i);
     });
