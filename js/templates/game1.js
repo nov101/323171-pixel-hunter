@@ -51,11 +51,18 @@ export default function game1() {
     setActiveScreen(rules());
   });
 
-  for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener(`load`, (event) =>{
-      calculateAspectRatioFit(images[i]);
+  // for (let i = 0; i < images.length; i++) {
+  //   images[i].addEventListener(`load`, (event) =>{
+  //     calculateAspectRatioFit(images[i]);
+  //   });
+  // }
+
+  for (let i in images) {
+    i.addEventListener(`load`, (event) =>{
+      calculateAspectRatioFit(i);
     });
   }
+
 
   form.addEventListener(`change`, () => {
     const checkedAnswers = document.querySelectorAll(`input[type=radio]:checked`);

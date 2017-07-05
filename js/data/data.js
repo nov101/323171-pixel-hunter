@@ -1,29 +1,29 @@
 export const initialState = Object.freeze({
   lives: 2,
   time: 0,
-  level: `1`
+  level: 1
 });
 
 export const levels = Object.freeze({
   '1': {
     question: `Угадайте для каждого изображения фото или рисунок?`,
     answers: [
-      `https://k42.kn3.net/CF42609C8.jpg`,
-      `http://i.imgur.com/1KegWPz.jpg`
+      {url:`https://k42.kn3.net/CF42609C8.jpg`, right: true, type: `1`},
+      {url:`http://i.imgur.com/1KegWPz.jpg`,right: false, type: `1`}
     ]
   },
   '2': {
     question: `Угадай, фото или рисунок?`,
     answers: [
-      `https://k32.kn3.net/5C7060EC5.jpg`
+      {url:`https://k32.kn3.net/5C7060EC5.jpg`,right: false, type: `2`}
     ]
   },
   '3': {
     question: `Найдите рисунок среди изображений`,
     answers: [
-      `http://i.imgur.com/DKR1HtB.jpg`,
-      `http://i.imgur.com/1KegWPz.jpg`,
-      `https://i.imgur.com/DiHM5Zb.jpg`
+      {url:`http://i.imgur.com/DKR1HtB.jpg`, right: false, type: `3`},
+      {url:`http://i.imgur.com/1KegWPz.jpg`, right: false, type: `3`},
+      {url:`https://i.imgur.com/DiHM5Zb.jpg`, right: false, type: `3`}
     ]
   }
 });
